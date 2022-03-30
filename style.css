@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container-main {
+    background: #c55e5e;
+    height: 747;
+    width: 100vw;
+}
+
+.container-two {
+    background: #ffa900;
+    height: 580px;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-top: 10px;
+}
+
+.logo > img {
+    height: 120px;
+    margin-right: 70px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.btn-style > button {
+    color: #c55e5e;
+    border: none;
+    border-radius: 100px;
+    padding: 13px;
+    width: 300px;
+    height: 60px;
+    margin-left: 20px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.custom {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-style > button:hover {
+    background: #ffc107dc;
+}
+
+.cartoon {
+    width: 100vw;
+    justify-content: center;
+    display: flex; 
+}
+
+.cartoon > img {
+    width: 430px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 120px;
+    color: white;
+    font-family: Helvetica;
+    font-size: 90px;
+    font-weight: 900;
+    
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.pause-btn > img {
+    width: 45px;
+    height: 60px;
+}
+
+.rest-btn > img {
+    width: 50px;
+    height: 60px;
+}
+
+.start-btn > img {
+    width: 50px;
+    height: 60px;
+}
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pomodoro-techinique {
+    width: 540px;
+    margin-right: 60px;
+}
+
+.todo-list {
+    width: 445px;
+    margin-left: 60px;
+}
+
+.list {
+    width: 475px;
+    height: 400px;
+    margin-right: 50px;
+}
+
+.todo-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    background: #c55e5e;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.todo-div{
+    display: flex;
+    justify-content: end;
+}
+
+.container-three {
+    display: flex;
+    height: 390px;
+    background: #c55e5e;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-shot {
+    margin-right: 10px;
+}
+
+.screen-shot > img{
+    height: 320px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.footer-logo {
+    width: 540px;
+}
+
+.play-store, .app-store {
+    width: 216px;
+    height: 83px;
+}
+
+.short-break:focus{
+    background: #ffc107dc;
+    
+}
+
+.pomodoro:focus{
+    background: #ffc107dc;
+}
+
+.long-break:focus{
+    background: #ffc107dc;
+}
+
+.loop:focus{
+    background: #ffc107dc;
+}
+
+.custom-time-popup {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-time-popup.open {
+    display: flex;
+}
+
+.custom-time-container {
+    background: #ffede5;
+    width: 800px;
+    padding: 30px;
+}
+
+.custom-time-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    overflow-y: hidden;
+}
+
+.custom-time-header > h4 {
+    height: 40px;
+    font-size: 20px;
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.custom-time-header > img {
+    width: 68px;
+    height: 45px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.form-group > label {
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group > input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.custom-time-footer {
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.custom-time-footer > button {
+    padding: 16px;
+    background: #c55e5e;
+    color: #ffa900;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.what-is-pomodoro-timer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-is-container {
+    background: white;
+    width: 800px;
+    padding: 30px;
+}
+
+.what-is-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    overflow-y: hidden;
+}
+
+.what-is-header > h4 {
+    height: 40px;
+    font-size: 30px;
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-y: hidden;
+}
+
+.what-is-header > img {
+    width: 68px;
+    height: 45px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.online-pomodoro-timer > p {
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 15px;
+}
+
+.online-pomodoro-timer > h4 {
+    height: 40px;
+    font-size: 20px;
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.about-pomodoro-technique > h4 {
+    height: 40px;
+    font-size: 20px;
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-pomodoro-technique > p {
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 15px;
+}
+
+.how-to-use > h4 {
+    height: 40px;
+    font-size: 20px;
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.how-to-use > u {
+    color: #c55e5e;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.what-is-pomodoro-timer.open {
+    display: flex;
+}
+
+.add-task {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    overflow-y: hidden;
+    
+}
+
+.add-task-container {
+    background: white;
+    width: 800px;
+    padding: 30px;
+}
+
+.add-task-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.add-task-header > h4 {
+    height: 40px;
+    font-size: 25px;
+    color: #ec3333;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.add-task-header > img {
+    width: 70px;
+    height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.add-task-btn > button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.add-task-btn.red {
+    background:#c55e5e;
+    color: white;
+    border: solid 2px #eb4545;
+}
+
+.add-task-btn .white {
+    background:#ffffff;
+    color: #c55e5e;
+    border: solid 2px #eb4545;
+}
+
+.add-task.text {
+    width: 100%;
+}
+
+.add-task-text > input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+}
+
+.add-task-text > input::placeholder {
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.add-task-text > textarea {
+    width: 100%;
+    height: 120px;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.add-task-text > textarea::placeholder{
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.add-task-save-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.add-task-save-btn > button {
+    padding: 16px;
+    background: #c55e5e;
+    color: #ffa900;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.add-task.open {
+    display: flex;
+}

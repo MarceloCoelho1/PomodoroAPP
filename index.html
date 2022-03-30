@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pomodoroAPP/style.css">
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="header">
+            <div class="center">
+                <div class="logo">
+                    <img src="/pomodoroAPP/img/logo.svg" alt="">
+                </div>
+                <div class="info btn-style">
+                    <button class="custom-time">CUSTOM-TIMER</button>
+                     <button       class="what-is-pomodoro-btn">WHAT IS POMODORO TIMER? </button>
+                </div>
+            </div>
+        </div>
+        <div class="custom btn-style">
+            <button class="pomodoro">POMODORO</button>
+            <button class="short-break">SHORT BREAK</button>
+            <button class="long-break">LONG BREAK</button>
+            <button class="loop">LOOP</button>
+        </div>
+        <div class="cartoon">
+            <img src="/pomodoroAPP/img/tomato-cartoon.svg" alt="">
+        </div>
+        <div class="timer">
+            <span class="minutes">25</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+        </div>
+        <div class="controls">
+            <a href="#" class="pause-btn">
+                <img src="/pomodoroAPP/img/stop-button.svg" alt="">
+            </a>
+            <a href="#" class="start-btn">
+                <img src="/pomodoroAPP/img/play-button.svg">
+            </a>
+            <a href="#" class="rest-btn">
+                <img src="/pomodoroAPP/img/rest-button.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="container-two">
+        <div class="pomodoro-techinique">
+            <img src="/pomodoroAPP/img/tomato-work-flow.svg" alt="">
+        </div>
+        <div class="todo-list">
+            <img src="/pomodoroAPP/img/todo-label.svg" alt="">
+            <div class="list"></div>
+            <div class="todo-div">
+                <button class="todo-btn">Add To Do</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-three">
+        <div class="screen-shot">
+            <img src="/pomodoroAPP/img/screen-shot.png" alt="">
+        </div>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="/pomodoroAPP/img/footer-logo.svg" alt="">
+                <img src="/pomodoroAPP/img/google-play-store.png" alt="" class="play-store">
+                <img src="/pomodoroAPP/img/app-store.png" alt="" class="app-store">
+            </div>
+
+        </div>
+    </div>
+    <div class="custom-time-popup">
+        <div class="custom-time-container">
+            <div class="custom-time-header">
+                <h4>ENTER CUSTOM TIMER</h4>
+                <img src="/pomodoroAPP/img/close-button.svg" alt="" class="close-popup-timer">
+            </div>
+            <div class="custom-time-content">
+                <div class="form-group">
+                    <label for="">POMODORO</label>
+                    <input class="pomodoro-input" type="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="">SHORT BREAK</label>
+                    <input class="short-break-input" type="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="">LONG BREAK</label>
+                    <input class="long-break-input" type="number" required>
+                </div>
+            </div>
+            <div class="custom-time-footer">
+                <button class="custom-save-btn">SAVE</button>
+            </div>
+        </div>
+    </div>
+    <div class="what-is-pomodoro-timer">
+        <div class="what-is-container">
+            <div class="what-is-header">
+                <h4>What is Pomodoro Timer?</h4>
+                <img src="/pomodoroAPP/img/close-button.svg" alt="" class="close-what-is-pomodoro">
+            </div>
+            <div class="what-is-content">
+                <div class="online-pomodoro-timer">
+                    <h4>Online Pomodoro Timer</h4>
+                    <p>TomatoTimers is a customizable and easy to use looping pomodoro timer to boost your efficiency.
+                    </p>
+                </div>
+                <div class="about-pomodoro-technique">
+                    <h4>About Pomodoro Technique</h4>
+                    <p>Pomodoro™ Technique is a time management method developed by Francesco Cirillo in the late 1980s.
+                        This technique use timer to break down works into a set of intervals separated by breaks.
+                        Pomodoro technique increases productivity by taking short scheduled breaks regularly.</p>
+                </div>
+                <div class="how-to-use">
+                    <h4>How to use Pomodoro/ Tomato timers</h4>
+                    <u>
+                        <li>Decide task to be done set timers to 25 minutes for one "Pomodoro"</li>
+                        <li>Work on task until timer is complete</li>
+                        <li>After timer completion, put a checkmark on to-do list</li>
+                        <li>Take a 5 minutes short break</li>
+                        <li>After four "Pomodoro" take a long break</li>
+                        <li>Repeat to step 1</li>
+                    </u>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="add-task">
+        <div class="add-task-container">
+            <div class="add-task-header">
+                <h4>Task Manager</h4>
+                <img src="/pomodoroAPP/img/close-button.svg" alt="" class="close-add-task">
+            </div>
+            <div class="add-task-btn">
+                <button class="add-task-btn red">Notes</button>
+                <button class="add-task-btn white">Check List</button>
+            </div>
+            <div class="add-task-text">
+                <input type="text" class="tittle-task" placeholder="Title">
+                <textarea placeholder="Notes" class="textarea-task"
+                cols="30" rows="10"></textarea>
+            </div>
+            <div class="add-task-save-btn">
+                <button class="save-task-btn">SAVE</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/pomodoroAPP/script.js"></script>
+</body>
+
+</html>
